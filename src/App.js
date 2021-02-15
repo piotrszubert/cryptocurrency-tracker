@@ -33,9 +33,9 @@ const App = () => {
       {items.map((item) => (
         <div className="item" key={item.id}>
             <h2>{item.name}</h2>
+            <img src={item.image} alt="crypto symbol"></img>
             <h3>{item.symbol}</h3>
             <p>{item.current_price}</p>
-            <p>{item.price_change_24h}</p>
         </div>
       ))}
     </div>

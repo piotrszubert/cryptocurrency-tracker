@@ -8,6 +8,11 @@
 .item {
   display: flex;
   justify-content: space-between;
+  border: 2px solid black;
   align-items: center;
   padding: 10px;
+}
+
+img {
+  height: 30px;
 }
