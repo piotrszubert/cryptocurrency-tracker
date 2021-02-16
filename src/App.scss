@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  align-items: center;
+  padding: 10px;
+
+  img {
+    height: 30px;
+  }
+
+  h2 {
+    width: 25%;
+  }
+
+  h3 {
+    width: 25%;
+  }
+
+  p {
+    width: 25%;
+  }
+}
+

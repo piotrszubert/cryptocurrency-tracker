@@ -35,7 +35,7 @@ const App = () => {
             <h2>{item.name}</h2>
             <img src={item.image} alt="crypto symbol"></img>
             <h3>{item.symbol}</h3>
-            <p>{item.current_price}</p>
+            <p>{item.current_price} PLN</p>
         </div>
       ))}
     </div>
