@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Currency from './components/Currency';
 
 /*
 https://api.coingecko.com/api/v3/coins/markets?
@@ -11,13 +12,13 @@ vs_currency=pln&order=market_cap_desc&per_page
 const App = () => {
 
   const [items, setItems] = useState([]);
-  //const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchItems = async () => {
       const result = await axios(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln&order=market_cap_desc&per_page=50&page=1&sparkline=false`)
       setItems(result.data);
-      // setIsLoading(false);
+      setIsLoading(false);
     }
     fetchItems();
   }, [])
@@ -29,7 +30,7 @@ const App = () => {
     }).catch(err => console.log(err));
    */
   return (
-    <div items={items}>
+  /*   <div items={items}>
       {items.map((item) => (
         <div className="item" key={item.id}>
             <h2>{item.name}</h2>
@@ -38,7 +39,8 @@ const App = () => {
             <p>{item.current_price} PLN</p>
         </div>
       ))}
-    </div>
+    </div> */
+    <Currency items={items} isLoading={isLoading}></Currency>
   );
 }
 
