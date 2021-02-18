@@ -40,5 +40,9 @@
     width: 200px;
     border: none;
     border-bottom: 1px solid black;
+
+    &:focus {
+      background-color: lightgreen;
+    }
   }
 }

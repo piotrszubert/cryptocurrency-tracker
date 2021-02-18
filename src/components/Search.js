@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Search = ( {items} ) => {
+const Search = ( {handleSearch} ) => {
     return(
-        <div className="search">
+        <div  onChange={handleSearch}  className="search">
             <form>
                 <input type="text" placeholder="Search currency"></input>
             </form>

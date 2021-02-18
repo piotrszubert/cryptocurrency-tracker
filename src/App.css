@@ -55,4 +55,8 @@
   border: none;
   border-bottom: 1px solid black;
 }
+
+.search input:focus {
+  background-color: lightgreen;
+}
 /*# sourceMappingURL=App.css.map */
