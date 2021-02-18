@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Currency = ( {filteredItems, isLoading} ) => {
-    return isLoading ? (<h2>Loading...</h2>) : (
+    return isLoading ? (<div class="loader">Loading...</div>) : (
 
             <div items={filteredItems}>
                 {filteredItems.map((item) => (

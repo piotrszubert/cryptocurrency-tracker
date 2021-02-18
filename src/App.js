@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const result = await axios(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln&order=market_cap_desc&per_page=50&page=1&sparkline=false`)
+      const result = await axios(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln&order=market_cap_desc&per_page=250&page=1&sparkline=false`)
      // const result = await axios(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${vsCurrency[1]}&order=market_cap_desc&per_page=50&page=1&sparkline=false`)
       setItems(result.data);
       setIsLoading(false);
