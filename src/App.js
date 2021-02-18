@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Currency from './components/Currency';
+import Search from './components/Search';
 
 /*
 https://api.coingecko.com/api/v3/coins/markets?
@@ -22,26 +23,13 @@ const App = () => {
     }
     fetchItems();
   }, [])
-  /* 
-    axios.get(
-      'https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln&order=market_cap_desc&per_page=50&page=1&sparkline=false'
-    ).then(res => {
-      console.log(res.data);
-    }).catch(err => console.log(err));
-   */
-  return (
-  /*   <div items={items}>
-      {items.map((item) => (
-        <div className="item" key={item.id}>
-            <h2>{item.name}</h2>
-            <img src={item.image} alt="crypto symbol"></img>
-            <h3>{item.symbol}</h3>
-            <p>{item.current_price} PLN</p>
-        </div>
-      ))}
-    </div> */
+
+   return (
+    <div>
+    <Search></Search>
     <Currency items={items} isLoading={isLoading}></Currency>
-  );
+    </div>
+  ); 
 }
 
 export default App;

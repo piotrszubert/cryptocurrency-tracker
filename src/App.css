@@ -17,6 +17,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 .item img {
@@ -33,5 +34,25 @@
 
 .item p {
   width: 25%;
+}
+
+.search {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid black;
 }
 /*# sourceMappingURL=App.css.map */
