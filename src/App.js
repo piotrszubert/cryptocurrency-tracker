@@ -39,6 +39,7 @@ const App = () => {
   
    const filteredItems = items.filter(item => 
      item.name.toLowerCase().includes(search.toLowerCase())
+     || item.symbol.toLowerCase().includes(search.toLowerCase())
     );
      
    return (
