@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-$first-color: #161d6f;
-$font-color: #f6f6f6;
-$border-color: #c7ffd8;
+$first-color: #fff;
+$font-color: #ff777f;
+$border-color: #b777ff;
 
 * {
   margin: 0;
@@ -15,34 +15,6 @@ body {
   background-color: $first-color;
 }
 
-.item {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid $border-color;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 20px;
-  color: $first-color;
-  background-color: $border-color;
-
-  img {
-    height: 30px;
-  }
-
-  h2 {
-    width: 25%;
-  }
-
-  h3 {
-    width: 25%;
-  }
-
-  p {
-    width: 25%;
-    font-weight: 700;
-    font-size: 18px;
-  }
-}
 
 .loading {
   display: flex;

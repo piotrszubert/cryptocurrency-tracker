@@ -1,0 +1,117 @@
+.item-wrapper {
+  background-color: #d1cbcb;
+  width: 80vw;
+  border-radius: 30px;
+  margin: auto;
+}
+
+.item {
+  background-color: #fff;
+  border: 2px solid #b777ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 80vw;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.item img {
+  height: 30px;
+}
+
+.item h2 {
+  font-size: 24px;
+  font-weight: 700;
+  width: 25%;
+  color: #ff777f;
+}
+
+.item h3 {
+  width: 25%;
+}
+
+.item p {
+  width: 25%;
+}
+
+.item button {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 30%;
+  background-color: #fff;
+  rotate: 90deg;
+}
+
+.more-info {
+  height: 0px;
+  width: 80vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.more-info .more-data {
+  display: none;
+}
+
+.more-info-active {
+  height: 250px;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: auto;
+  border: 2px solid #b777ff;
+  border-radius: 30px;
+  border-top: none;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.more-info-active .more-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.more-info-active .more-data .sparkline {
+  color: aqua;
+}
+
+@media only screen and (max-width: 768px) {
+  .more-info-active .more-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Currency.css.map */
